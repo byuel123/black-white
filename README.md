@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="id">
 <head>
 <meta charset="UTF-8">
@@ -19,6 +19,23 @@ html {
 body {
     font-family: Arial, sans-serif;
     background: #f9fafb;
+}
+
+/* LANDING (WELCOME) */
+.landing {
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1000&q=80') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing-box {
+    background: rgba(0,0,0,0.6);
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
 }
 
 /* HEADER */
@@ -96,12 +113,10 @@ nav a {
     position: relative;
 }
 
-/* HOVER */
 .card:hover {
     transform: translateY(-5px);
 }
 
-/* CLICK */
 .card:active {
     transform: scale(0.95);
 }
@@ -111,14 +126,8 @@ nav a {
     height: 150px;
     object-fit: cover;
     border-radius: 8px;
-    transition: transform 0.2s;
 }
 
-.card:active img {
-    transform: scale(1.1);
-}
-
-/* BADGE */
 .badge {
     position: absolute;
     top: 8px;
@@ -129,7 +138,6 @@ nav a {
     border-radius: 5px;
 }
 
-/* TEXT */
 .card h3 {
     font-size: 14px;
     margin: 8px 0;
@@ -152,10 +160,6 @@ button {
     cursor: pointer;
 }
 
-button:active {
-    transform: scale(0.95);
-}
-
 /* FOOTER */
 footer {
     background: #333;
@@ -169,10 +173,21 @@ footer {
 
 <body>
 
+<!-- LANDING -->
+<section class="landing">
+    <div class="landing-box">
+        <h1>Selamat Datang di Serba-Serbi Store</h1>
+        <p>Toko online fashion casual terbaik untuk kamu</p>
+        <a href="#produk">
+            <button>Masuk ke Toko</button>
+        </a>
+    </div>
+</section>
+
 <header>
     <h1>🛒 Serba-Serbi Store</h1>
     <nav>
-        <a href="index2.html">Home</a>
+        <a href="#">Home</a>
         <a href="#produk">Produk</a>
         <a href="#kategori">Kategori</a>
         <a href="#keranjang">Keranjang</a>
@@ -182,11 +197,13 @@ footer {
 <main>
 
 <!-- HERO -->
-<section class="hero" id="home">
+<section class="hero">
     <div class="hero-content">
-        <h2>Selamat Datang di Toko Online</h2>
-        <p>Temukan gaya casual favoritmu setiap hari 👕🧢</p>
-        <button>Belanja Sekarang</button>
+        <h2>Belanja Mudah & Cepat</h2>
+        <p>Temukan produk favoritmu sekarang</p>
+        <a href="#produk">
+            <button>Belanja Sekarang</button>
+        </a>
     </div>
 </section>
 
@@ -209,31 +226,31 @@ footer {
 
         <div class="card" id="sepatu">
             <span class="badge">🔥 Best Seller</span>
-            <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=500&q=80" alt="Sepatu">
-            <h3>Sneakers nike air force1 x Carhartt WIP</h3>
+            <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=500&q=80">
+            <h3>Sneakers Casual</h3>
             <p class="price">Rp 4.500.000</p>
-            <button>Tambah ke Keranjang</button>
+            <button>Beli Sekarang</button>
         </div>
 
         <div class="card" id="kaos">
-            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=500&q=80" alt="Kaos">
-            <h3>Kaos putih casual</h3>
-            <p class="price">Rp 199.000</p>
-            <button>Tambah ke Keranjang</button>
+            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=500&q=80">
+            <h3>Kaos Casual</h3>
+            <p class="price">Rp 250.000</p>
+            <button>Beli Sekarang</button>
         </div>
 
         <div class="card" id="tas">
-            <img src="https://images.unsplash.com/photo-1509762774605-f07235a08f1f?auto=format&fit=crop&w=500&q=80" alt="Tas">
-            <h3>Tas sport</h3>
-            <p class="price">Rp 350.000</p>
-            <button>Tambah ke Keranjang</button>
+            <img src="https://images.unsplash.com/photo-1509762774605-f07235a08f1f?auto=format&fit=crop&w=500&q=80">
+            <h3>Tas Ransel</h3>
+            <p class="price">Rp 500.000</p>
+            <button>Beli Sekarang</button>
         </div>
 
         <div class="card" id="topi">
-            <img src="https://images.unsplash.com/photo-1521369909029-2afed882baee?auto=format&fit=crop&w=500&q=80" alt="Topi">
+            <img src="https://images.unsplash.com/photo-1521369909029-2afed882baee?auto=format&fit=crop&w=500&q=80">
             <h3>Topi Casual</h3>
             <p class="price">Rp 120.000</p>
-            <button>Tambah ke Keranjang</button>
+            <button>Beli Sekarang</button>
         </div>
 
     </div>
